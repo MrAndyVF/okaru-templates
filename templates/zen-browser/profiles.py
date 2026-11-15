@@ -4,7 +4,7 @@
 Por perfil: chrome/okaru-chrome.css y chrome/okaru-content.css, una línea @import marcada al principio de
 userChrome.css / userContent.css y una línea marcada en user.js para que Zen lea esos archivos.
 """
-import configparser, os, shutil, sys, tempfile
+import configparser, os, re, shutil, sys, tempfile
 
 HOME = os.path.expanduser("~")
 CACHE = os.path.join(os.environ.get("XDG_CACHE_HOME") or os.path.join(HOME, ".cache"), "okaru", "zen-browser")
@@ -15,6 +15,8 @@ ROOTS = [os.path.join(os.environ.get("XDG_CONFIG_HOME") or os.path.join(HOME, ".
 MARK = "/* okaru */"
 PREF = 'user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // okaru'
 FILES = {"userChrome.css": "okaru-chrome.css", "userContent.css": "okaru-content.css"}
+# @import sin marca que dejaba la plantilla anterior (apuntaba a la caché): se quita al aplicar o deshacer.
+LEGACY_IMPORT = re.compile(r'^@import\s+(?:url\()?"[^"]*/okaru/zen-browser/zen-user(?:Chrome|Content)\.css"\)?;\s*$')
 
 
 def profiles():
@@ -42,7 +44,7 @@ def write(path, lines):
 def edit(path, line, add, first):
     """Añade o quita `line` (marcada como nuestra) sin tocar el resto del archivo."""
     lines = open(path, encoding="utf-8").readlines() if os.path.isfile(path) else []
-    kept = [l for l in lines if l.rstrip("\n") != line]
+    kept = [l for l in lines if l.rstrip("\n") != line and not LEGACY_IMPORT.match(l)]
     if add:
         kept = ([line + "\n"] + kept) if first else (kept + [line + "\n"])
     if kept == lines:
