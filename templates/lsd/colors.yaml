@@ -1,0 +1,39 @@
+# OKARU: generado desde la paleta activa (colores como [r, g, b]).
+user: [{{ colors.primary.default.rgb_csv }}]
+group: [{{ colors.secondary.default.rgb_csv }}]
+permission:
+  read: [{{ colors.added.default.rgb_csv }}]
+  write: [{{ colors.caution.default.rgb_csv }}]
+  exec: [{{ colors.error.default.rgb_csv }}]
+  exec-sticky: [{{ colors.tertiary.default.rgb_csv }}]
+  no-access: [{{ colors.outline.default.rgb_csv }}]
+  octal: [{{ colors.tertiary.default.rgb_csv }}]
+  acl: [{{ colors.secondary.default.rgb_csv }}]
+  context: [{{ colors.secondary.default.rgb_csv }}]
+date:
+  hour-old: [{{ colors.primary.default.rgb_csv }}]
+  day-old: [{{ colors.on_surface_variant.default.rgb_csv }}]
+  older: [{{ colors.outline.default.rgb_csv }}]
+size:
+  none: [{{ colors.outline.default.rgb_csv }}]
+  small: [{{ colors.on_surface_variant.default.rgb_csv }}]
+  medium: [{{ colors.caution.default.rgb_csv }}]
+  large: [{{ colors.error.default.rgb_csv }}]
+inode:
+  valid: [{{ colors.tertiary.default.rgb_csv }}]
+  invalid: [{{ colors.outline.default.rgb_csv }}]
+links:
+  valid: [{{ colors.tertiary.default.rgb_csv }}]
+  invalid: [{{ colors.error.default.rgb_csv }}]
+tree-edge: [{{ colors.outline_variant.default.rgb_csv }}]
+git-status:
+  default: [{{ colors.outline.default.rgb_csv }}]
+  unmodified: [{{ colors.outline.default.rgb_csv }}]
+  ignored: [{{ colors.outline_variant.default.rgb_csv }}]
+  new-in-index: [{{ colors.added.default.rgb_csv }}]
+  new-in-workdir: [{{ colors.added.default.rgb_csv }}]
+  typechange: [{{ colors.caution.default.rgb_csv }}]
+  deleted: [{{ colors.error.default.rgb_csv }}]
+  renamed: [{{ colors.tertiary.default.rgb_csv }}]
+  modified: [{{ colors.caution.default.rgb_csv }}]
+  conflicted: [{{ colors.error.default.rgb_csv }}]

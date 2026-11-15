@@ -1,0 +1,6 @@
+/* OKARU: generado desde la paleta activa (tokens Material como --md-sys-color-*). */
+:root {
+<* for name, value in colors *>
+  --md-sys-color-{{ name | kebab_case }}: {{ value.default.hex }};
+<* endfor *>
+}

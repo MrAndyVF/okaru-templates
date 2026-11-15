@@ -1,0 +1,23 @@
+[catalog.zed]
+name = "Zed"
+category = "editor"
+
+[config.custom_colors.added]
+color = "#3fa66b"
+blend = true
+
+[config.custom_colors.caution]
+color = "#d89a2b"
+blend = true
+
+# Una sola familia con las variantes "OKARU Dark" y "OKARU Light": Zed sigue el modo del sistema
+# ("theme": { "mode": "system", ... }) y recarga la carpeta themes sola, sin hook.
+[templates.zed]
+input_path = "okaru.json"
+output_path = "$XDG_CONFIG_HOME/zed/themes/okaru.json"
+
+# Gram (fork de Zed) lee el mismo formato. Solo si está instalado.
+[templates.gram]
+input_path = "okaru.json"
+output_path = "$XDG_CONFIG_HOME/gram/themes/okaru.json"
+requires_path = "$XDG_CONFIG_HOME/gram"

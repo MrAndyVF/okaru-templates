@@ -1,0 +1,41 @@
+[catalog.papirus-icons]
+name = "Papirus folders"
+category = "system"
+
+# El motor elige el color de carpeta de Papirus más cercano al primario (closest_color). Se compara con claridad y
+# saturación fijas para que mande el tono, no lo claro u oscuro del modo.
+# shortcut: un primario casi gris también sale con color; si molesta, añadir un umbral de saturación.
+[templates.papirus-icons]
+input_path = "folder-color"
+output_path = "$XDG_CACHE_HOME/okaru/papirus-folder-color"
+compare_to = "{{ colors.primary.default.hex | set_lightness 58 | set_saturation 70 }}"
+post_hook = "sh '{{ config_dir }}/recolor.sh' apply '{{ closest_color }}' '{{ mode }}'"
+undo_hook = "sh '{{ config_dir }}/recolor.sh' undo"
+# Colores de las carpetas de Papirus (cara frontal de places/48x48/folder-<color>.svg).
+colors_to_compare = [
+  { name = "adwaita", color = "#93c0ea" },
+  { name = "black", color = "#4f4f4f" },
+  { name = "blue", color = "#5294e2" },
+  { name = "bluegrey", color = "#607d8b" },
+  { name = "breeze", color = "#57b8ec" },
+  { name = "brown", color = "#ae8e6c" },
+  { name = "carmine", color = "#a30002" },
+  { name = "cyan", color = "#00bcd4" },
+  { name = "darkcyan", color = "#45abb7" },
+  { name = "deeporange", color = "#eb6637" },
+  { name = "green", color = "#87b158" },
+  { name = "grey", color = "#8e8e8e" },
+  { name = "indigo", color = "#5c6bc0" },
+  { name = "magenta", color = "#ca71df" },
+  { name = "nordic", color = "#81a1c1" },
+  { name = "orange", color = "#ee923a" },
+  { name = "palebrown", color = "#d1bfae" },
+  { name = "paleorange", color = "#eeca8f" },
+  { name = "pink", color = "#f06292" },
+  { name = "red", color = "#e25252" },
+  { name = "teal", color = "#16a085" },
+  { name = "violet", color = "#7e57c2" },
+  { name = "white", color = "#e4e4e4" },
+  { name = "yaru", color = "#676767" },
+  { name = "yellow", color = "#f9bd30" },
+]

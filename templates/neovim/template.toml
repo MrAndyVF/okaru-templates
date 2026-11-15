@@ -1,0 +1,18 @@
+[catalog.neovim]
+name = "Neovim"
+category = "editor"
+
+[config.custom_colors.added]
+color = "#3fa66b"
+blend = true
+
+[config.custom_colors.caution]
+color = "#d89a2b"
+blend = true
+
+# Un colorscheme normal en colors/: se elige con `:colorscheme okaru`. El hook recarga los Neovim abiertos
+# que ya lo usan.
+[templates.neovim]
+input_path = "okaru.lua"
+output_path = "$XDG_CONFIG_HOME/nvim/colors/okaru.lua"
+post_hook = "sh '{{ config_dir }}/reload.sh'"

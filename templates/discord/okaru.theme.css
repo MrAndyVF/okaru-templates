@@ -1,0 +1,128 @@
+/**
+ * @name OKARU
+ * @description Colores de la paleta activa de OKARU. Generado: no editar.
+ * @author OKARU
+ * @version 1.0.0
+ */
+
+/* Variables de Discord (nombres actuales y anteriores): las que no existen en una versión no hacen nada. */
+:root,
+.theme-dark,
+.theme-light,
+.theme-darker,
+.theme-midnight,
+.visual-refresh {
+  --okaru-surface: {{ colors.surface.default.hex }};
+  --okaru-lowest: {{ colors.surface_container_lowest.default.hex }};
+  --okaru-low: {{ colors.surface_container_low.default.hex }};
+  --okaru-mid: {{ colors.surface_container.default.hex }};
+  --okaru-high: {{ colors.surface_container_high.default.hex }};
+  --okaru-highest: {{ colors.surface_container_highest.default.hex }};
+  --okaru-text: {{ colors.on_surface.default.hex }};
+  --okaru-text-dim: {{ colors.on_surface_variant.default.hex }};
+  --okaru-outline: {{ colors.outline.default.hex }};
+  --okaru-line: {{ colors.outline_variant.default.hex }};
+  --okaru-primary: {{ colors.primary.default.hex }};
+  --okaru-on-primary: {{ colors.on_primary.default.hex }};
+  --okaru-primary-box: {{ colors.primary_container.default.hex }};
+  --okaru-secondary-box: {{ colors.secondary_container.default.hex }};
+  --okaru-on-secondary-box: {{ colors.on_secondary_container.default.hex }};
+
+  /* fondos */
+  --background-base-lowest: var(--okaru-lowest);
+  --background-base-lower: var(--okaru-low);
+  --background-base-low: var(--okaru-mid);
+  --background-surface-high: var(--okaru-high);
+  --background-surface-higher: var(--okaru-high);
+  --background-surface-highest: var(--okaru-highest);
+  --background-primary: var(--okaru-surface);
+  --background-secondary: var(--okaru-mid);
+  --background-secondary-alt: var(--okaru-high);
+  --background-tertiary: var(--okaru-low);
+  --background-floating: var(--okaru-high);
+  --background-accent: var(--okaru-primary-box);
+  --background-message-hover: {{ colors.on_surface.default.hex }}0a;
+  --background-modifier-hover: {{ colors.on_surface.default.hex }}14;
+  --background-modifier-active: {{ colors.on_surface.default.hex }}1f;
+  --background-modifier-selected: {{ colors.secondary_container.default.hex }}cc;
+  --background-modifier-accent: var(--okaru-line);
+  --background-mod-subtle: {{ colors.on_surface.default.hex }}0f;
+  --background-mod-normal: {{ colors.on_surface.default.hex }}1a;
+  --background-mod-strong: {{ colors.on_surface.default.hex }}29;
+  --chat-background-default: var(--okaru-surface);
+  --channeltextarea-background: var(--okaru-high);
+  --input-background-default: var(--okaru-high);
+  --input-background: var(--okaru-high);
+  --modal-background: var(--okaru-high);
+  --modal-footer-background: var(--okaru-mid);
+  --deprecated-card-bg: var(--okaru-mid);
+  --card-primary-bg: var(--okaru-mid);
+  --home-background: var(--okaru-surface);
+  --bg-overlay-chat: var(--okaru-surface);
+  --bg-overlay-1: var(--okaru-surface);
+  --bg-overlay-2: var(--okaru-mid);
+  --bg-overlay-3: var(--okaru-low);
+
+  /* texto */
+  --text-default: var(--okaru-text);
+  --text-normal: var(--okaru-text);
+  --text-strong: var(--okaru-text);
+  --text-muted: var(--okaru-text-dim);
+  --text-subtle: var(--okaru-outline);
+  --text-link: var(--okaru-primary);
+  --text-brand: var(--okaru-primary);
+  --header-primary: var(--okaru-text);
+  --header-secondary: var(--okaru-text-dim);
+  --interactive-normal: var(--okaru-text-dim);
+  --interactive-hover: var(--okaru-text);
+  --interactive-active: var(--okaru-text);
+  --interactive-muted: var(--okaru-outline);
+  --interactive-text-default: var(--okaru-text-dim);
+  --interactive-text-hover: var(--okaru-text);
+  --interactive-text-active: var(--okaru-text);
+  --channels-default: var(--okaru-text-dim);
+  --channel-icon: var(--okaru-text-dim);
+
+  /* bordes */
+  --border-subtle: var(--okaru-line);
+  --border-normal: var(--okaru-line);
+  --border-strong: var(--okaru-outline);
+
+  /* acento */
+  --brand-500: var(--okaru-primary);
+  --brand-560: {{ colors.primary.default.hex | darken 6 }};
+  --brand-600: {{ colors.primary.default.hex | darken 12 }};
+  --brand-experiment: var(--okaru-primary);
+  --brand-experiment-560: {{ colors.primary.default.hex | darken 6 }};
+  --control-brand-foreground: var(--okaru-primary);
+  --control-brand-foreground-new: var(--okaru-primary);
+  --button-filled-brand-background: var(--okaru-primary);
+  --button-filled-brand-background-hover: {{ colors.primary.default.hex | darken 6 }};
+  --button-filled-brand-text: var(--okaru-on-primary);
+  --mention-foreground: var(--okaru-primary);
+  --mention-background: {{ colors.primary.default.hex }}26;
+  --background-mentioned: {{ colors.tertiary.default.hex }}1f;
+  --background-mentioned-hover: {{ colors.tertiary.default.hex }}29;
+  --info-warning-foreground: {{ colors.caution.default.hex }};
+
+  /* estado */
+  --status-positive: {{ colors.added.default.hex }};
+  --status-positive-background: {{ colors.added.default.hex }};
+  --status-warning: {{ colors.caution.default.hex }};
+  --status-warning-background: {{ colors.caution.default.hex }};
+  --status-danger: {{ colors.error.default.hex }};
+  --status-danger-background: {{ colors.error.default.hex }};
+  --text-positive: {{ colors.added.default.hex }};
+  --text-warning: {{ colors.caution.default.hex }};
+  --text-danger: {{ colors.error.default.hex }};
+
+  /* barras de desplazamiento */
+  --scrollbar-auto-thumb: var(--okaru-line);
+  --scrollbar-auto-track: transparent;
+  --scrollbar-thin-thumb: var(--okaru-line);
+  --scrollbar-thin-track: transparent;
+}
+
+::selection {
+  background: {{ colors.primary.default.hex }}55;
+}
