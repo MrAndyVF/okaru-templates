@@ -1,1 +1,383 @@
-[]
+[
+ {
+  "name": "claude-code",
+  "category": "ai",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "61b95f6dadb3ee5955a61d6e7a4c0a34",
+    "mode": "0644"
+   },
+   {
+    "name": "okaru.json",
+    "md5": "e79e033204de0692a0095555871b97d8",
+    "mode": "0644"
+   },
+   {
+    "name": "template.toml",
+    "md5": "15222baba75a7adfe6d78cc89aa3f6eb",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "discord",
+  "category": "chat",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "cf1a4d04ff0de55fc10f0dc6df06d0b9",
+    "mode": "0644"
+   },
+   {
+    "name": "okaru.theme.css",
+    "md5": "982c3d6d5f1088089431f46f5735c680",
+    "mode": "0644"
+   },
+   {
+    "name": "template.toml",
+    "md5": "82638e13650e96608058f1960917ac41",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "fastfetch",
+  "category": "misc",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "b8bbb4ba61b269a07ad4c63995cecec2",
+    "mode": "0644"
+   },
+   {
+    "name": "colors.json",
+    "md5": "88b6e592eb88464291c525fe5bff816a",
+    "mode": "0644"
+   },
+   {
+    "name": "recolor.py",
+    "md5": "91e1be802be48875547ef341dd4a3be0",
+    "mode": "0755"
+   },
+   {
+    "name": "template.toml",
+    "md5": "d14fc082434dcd90078eb4ca7b8aacc0",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "heroiclauncher",
+  "category": "gaming",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "7e47183b2a82f71937edafc2e0c68161",
+    "mode": "0644"
+   },
+   {
+    "name": "okaru.css",
+    "md5": "9c0eca5c1fe355f3e27c4b0d3826803e",
+    "mode": "0644"
+   },
+   {
+    "name": "template.toml",
+    "md5": "1dda018f0d86f23116c6060ff655a0aa",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "libreoffice",
+  "category": "misc",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "61b370d6c38a0248b28c114811779656",
+    "mode": "0644"
+   },
+   {
+    "name": "install.py",
+    "md5": "b1f6ab54d3dc9b99fc1ab1516adc532a",
+    "mode": "0755"
+   },
+   {
+    "name": "okaru.xcu",
+    "md5": "459ee48f634916752df41e0223e23cfa",
+    "mode": "0644"
+   },
+   {
+    "name": "template.toml",
+    "md5": "57a55a3438c0caead9a84327cc2c8ddf",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "lsd",
+  "category": "terminal",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "cd9a61239008b3a553fab029c328cd36",
+    "mode": "0644"
+   },
+   {
+    "name": "colors.yaml",
+    "md5": "5aa8b18118b7f2fabb530f15ae44ddaa",
+    "mode": "0644"
+   },
+   {
+    "name": "template.toml",
+    "md5": "eeb17584e2ac4b4ad642232914a70e32",
+    "mode": "0644"
+   },
+   {
+    "name": "theme.sh",
+    "md5": "f49d22da34004fe5f5f33d36986e1d54",
+    "mode": "0755"
+   }
+  ]
+ },
+ {
+  "name": "micro",
+  "category": "editor",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "7064a541850872452a7510c1eac97437",
+    "mode": "0644"
+   },
+   {
+    "name": "colorscheme.py",
+    "md5": "c232f727bf392a53b779600afd3021ab",
+    "mode": "0755"
+   },
+   {
+    "name": "okaru.micro",
+    "md5": "29a3e2a27c2d8446220dbcb714b90e5c",
+    "mode": "0644"
+   },
+   {
+    "name": "template.toml",
+    "md5": "9091414dae2a13b87d762092f59a321e",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "neovim",
+  "category": "editor",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "f0784fd1b54f226f095cf2c703b9a291",
+    "mode": "0644"
+   },
+   {
+    "name": "okaru.lua",
+    "md5": "a5524da26be1bc075f5b4506cd018c5a",
+    "mode": "0644"
+   },
+   {
+    "name": "reload.sh",
+    "md5": "66ba2f3dfdde8f0b0ee57b536c575344",
+    "mode": "0755"
+   },
+   {
+    "name": "template.toml",
+    "md5": "765fe4d4bdd829aa0b89ff442b153605",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "obs",
+  "category": "misc",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "3ffc45b9acf75f0eb4a449de6cb1301c",
+    "mode": "0644"
+   },
+   {
+    "name": "okaru.ovt",
+    "md5": "1e4bb73ddc902e462a2a9ce814768cbe",
+    "mode": "0644"
+   },
+   {
+    "name": "template.toml",
+    "md5": "f93330cccffd1326806aa2e06ee836a6",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "papirus-icons",
+  "category": "system",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "e93f7515e8457259c10cdf3b6614df74",
+    "mode": "0644"
+   },
+   {
+    "name": "folder-color",
+    "md5": "341755c07f677a0d50b980493d370143",
+    "mode": "0644"
+   },
+   {
+    "name": "recolor.sh",
+    "md5": "8f8d21b6e4e4b2d7bc4b3d457dc1323d",
+    "mode": "0755"
+   },
+   {
+    "name": "template.toml",
+    "md5": "e5a6620830ba07a76751c9f30f7e882a",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "prismlauncher",
+  "category": "gaming",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "8cd0f1f6d76b6fbc74989fcfe2a8dd93",
+    "mode": "0644"
+   },
+   {
+    "name": "template.toml",
+    "md5": "4bd8fa8fad611df84e4c84a37b8cd2c0",
+    "mode": "0644"
+   },
+   {
+    "name": "theme.json",
+    "md5": "a77e45946e0aa7f488f536542f5cd9d1",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "starship",
+  "category": "terminal",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "d72f7d0de686d3b8394a24e439bd5522",
+    "mode": "0644"
+   },
+   {
+    "name": "palette.py",
+    "md5": "f4661ac2b89eea96c2c80c5f69261122",
+    "mode": "0755"
+   },
+   {
+    "name": "palette.toml",
+    "md5": "903096496b6f840c8112aac7e51a790b",
+    "mode": "0644"
+   },
+   {
+    "name": "template.toml",
+    "md5": "71df791c1eadfb47025cdbf54f30c4dd",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "steam",
+  "category": "gaming",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "cbb15e4a26320ee1e7bacb59bcc7a3aa",
+    "mode": "0644"
+   },
+   {
+    "name": "colors.css",
+    "md5": "72bcac26b28b860160a2fbef6a7f13e6",
+    "mode": "0644"
+   },
+   {
+    "name": "template.toml",
+    "md5": "0e90018a8569f410686cfbf959fae974",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "telegram",
+  "category": "chat",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "947ac39915ea07736a6d48ac5232a5be",
+    "mode": "0644"
+   },
+   {
+    "name": "okaru.tdesktop-palette",
+    "md5": "858b0dd852b21cf85c743c8521b61833",
+    "mode": "0644"
+   },
+   {
+    "name": "template.toml",
+    "md5": "5da256a21dff1afb606f1da44360e850",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "zed",
+  "category": "editor",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "ce3adf7e5482b135ace45d9c0eead3d2",
+    "mode": "0644"
+   },
+   {
+    "name": "okaru.json",
+    "md5": "1064ae1c16aaeeebaeb5ac9cf2e23df0",
+    "mode": "0644"
+   },
+   {
+    "name": "template.toml",
+    "md5": "8cb50b94da54f7386259ba97ce88b699",
+    "mode": "0644"
+   }
+  ]
+ },
+ {
+  "name": "zen-browser",
+  "category": "browser",
+  "files": [
+   {
+    "name": "README.md",
+    "md5": "adc33f2be4d45b4455843854e5b79a26",
+    "mode": "0644"
+   },
+   {
+    "name": "okaru-chrome.css",
+    "md5": "bbd351deb42f68a1448f171914ce4297",
+    "mode": "0644"
+   },
+   {
+    "name": "okaru-content.css",
+    "md5": "ae4b835604d483e434175818e4a5e549",
+    "mode": "0644"
+   },
+   {
+    "name": "profiles.py",
+    "md5": "a58cca7dc1920dfbc49063c03d2199cf",
+    "mode": "0755"
+   },
+   {
+    "name": "template.toml",
+    "md5": "ca7540e27c91f87c0daa8a38c3a59449",
+    "mode": "0644"
+   }
+  ]
+ }
+]

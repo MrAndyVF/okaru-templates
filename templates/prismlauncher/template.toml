@@ -1,0 +1,22 @@
+[catalog.prismlauncher]
+name = "Prism Launcher"
+category = "gaming"
+
+[config.custom_colors.added]
+color = "#3fa66b"
+blend = true
+
+[config.custom_colors.caution]
+color = "#d89a2b"
+blend = true
+
+# Tema de Prism (carpeta themes/OKARU): paleta Qt sobre Fusion y colores del registro del juego.
+[templates.prismlauncher]
+input_path = "theme.json"
+output_path = "$XDG_DATA_HOME/PrismLauncher/themes/OKARU/theme.json"
+requires_path = "$XDG_DATA_HOME/PrismLauncher"
+
+[templates.prismlauncher_flatpak]
+input_path = "theme.json"
+output_path = "~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/themes/OKARU/theme.json"
+requires_path = "~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher"

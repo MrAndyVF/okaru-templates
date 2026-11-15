@@ -1,0 +1,16 @@
+[catalog.telegram]
+name = "Telegram"
+category = "chat"
+
+[config.custom_colors.added]
+color = "#3fa66b"
+blend = true
+
+[config.custom_colors.caution]
+color = "#d89a2b"
+blend = true
+
+# Paleta de Telegram Desktop: las claves que no están aquí se derivan de estas (windowBg, windowFg…).
+[templates.telegram]
+input_path = "okaru.tdesktop-palette"
+output_path = "$XDG_CONFIG_HOME/telegram-desktop/themes/okaru.tdesktop-palette"

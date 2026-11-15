@@ -1,0 +1,16 @@
+[catalog.zen-browser]
+name = "Zen Browser"
+category = "browser"
+
+# Se renderizan a la caché; el hook (en la segunda entrada, que va después) los copia a cada perfil de Zen.
+[templates.zen_browser_chrome]
+input_path = "okaru-chrome.css"
+output_path = "$XDG_CACHE_HOME/okaru/zen-browser/okaru-chrome.css"
+index = 0
+
+[templates.zen_browser_content]
+input_path = "okaru-content.css"
+output_path = "$XDG_CACHE_HOME/okaru/zen-browser/okaru-content.css"
+index = 1
+post_hook = "python3 '{{ config_dir }}/profiles.py' apply"
+undo_hook = "python3 '{{ config_dir }}/profiles.py' undo"

@@ -1,0 +1,583 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "OKARU",
+  "author": "OKARU",
+  "themes": [
+    {
+      "name": "OKARU Dark",
+      "appearance": "dark",
+      "style": {
+        "background": "{{ colors.surface_container.dark.hex }}",
+        "border": "{{ colors.outline_variant.dark.hex }}",
+        "border.variant": "{{ colors.surface_container_highest.dark.hex }}",
+        "border.focused": "{{ colors.primary.dark.hex }}",
+        "border.selected": "{{ colors.primary.dark.hex }}",
+        "border.transparent": "#00000000",
+        "border.disabled": "{{ colors.outline_variant.dark.hex }}",
+        "elevated_surface.background": "{{ colors.surface_container_high.dark.hex }}",
+        "surface.background": "{{ colors.surface_container.dark.hex }}",
+        "element.background": "{{ colors.surface_container_high.dark.hex }}",
+        "element.hover": "{{ colors.surface_container_highest.dark.hex }}",
+        "element.active": "{{ colors.secondary_container.dark.hex }}",
+        "element.selected": "{{ colors.secondary_container.dark.hex }}",
+        "element.disabled": "{{ colors.surface_container.dark.hex }}",
+        "drop_target.background": "{{ colors.primary.dark.hex }}33",
+        "ghost_element.background": "#00000000",
+        "ghost_element.hover": "{{ colors.surface_container_highest.dark.hex }}",
+        "ghost_element.active": "{{ colors.secondary_container.dark.hex }}",
+        "ghost_element.selected": "{{ colors.secondary_container.dark.hex }}",
+        "ghost_element.disabled": "#00000000",
+        "text": "{{ colors.on_surface.dark.hex }}",
+        "text.muted": "{{ colors.on_surface_variant.dark.hex }}",
+        "text.placeholder": "{{ colors.outline.dark.hex }}",
+        "text.disabled": "{{ colors.outline.dark.hex }}",
+        "text.accent": "{{ colors.primary.dark.hex }}",
+        "icon": "{{ colors.on_surface.dark.hex }}",
+        "icon.muted": "{{ colors.on_surface_variant.dark.hex }}",
+        "icon.disabled": "{{ colors.outline.dark.hex }}",
+        "icon.placeholder": "{{ colors.outline.dark.hex }}",
+        "icon.accent": "{{ colors.primary.dark.hex }}",
+        "status_bar.background": "{{ colors.surface_container.dark.hex }}",
+        "title_bar.background": "{{ colors.surface_container.dark.hex }}",
+        "title_bar.inactive_background": "{{ colors.surface_container_low.dark.hex }}",
+        "toolbar.background": "{{ colors.surface.dark.hex }}",
+        "tab_bar.background": "{{ colors.surface_container.dark.hex }}",
+        "tab.inactive_background": "{{ colors.surface_container.dark.hex }}",
+        "tab.active_background": "{{ colors.surface.dark.hex }}",
+        "search.match_background": "{{ colors.tertiary.dark.hex }}55",
+        "panel.background": "{{ colors.surface_container.dark.hex }}",
+        "panel.focused_border": "{{ colors.primary.dark.hex }}",
+        "pane.focused_border": "{{ colors.primary.dark.hex }}",
+        "scrollbar.thumb.background": "{{ colors.on_surface_variant.dark.hex }}44",
+        "scrollbar.thumb.hover_background": "{{ colors.on_surface_variant.dark.hex }}77",
+        "scrollbar.thumb.border": "#00000000",
+        "scrollbar.track.background": "#00000000",
+        "scrollbar.track.border": "#00000000",
+        "editor.foreground": "{{ colors.on_surface.dark.hex }}",
+        "editor.background": "{{ colors.surface.dark.hex }}",
+        "editor.gutter.background": "{{ colors.surface.dark.hex }}",
+        "editor.subheader.background": "{{ colors.surface_container.dark.hex }}",
+        "editor.active_line.background": "{{ colors.on_surface.dark.hex }}0d",
+        "editor.highlighted_line.background": "{{ colors.primary.dark.hex }}1a",
+        "editor.line_number": "{{ colors.outline.dark.hex }}",
+        "editor.active_line_number": "{{ colors.primary.dark.hex }}",
+        "editor.invisible": "{{ colors.outline_variant.dark.hex }}",
+        "editor.wrap_guide": "{{ colors.outline_variant.dark.hex }}66",
+        "editor.active_wrap_guide": "{{ colors.outline_variant.dark.hex }}",
+        "editor.document_highlight.read_background": "{{ colors.primary.dark.hex }}26",
+        "editor.document_highlight.write_background": "{{ colors.tertiary.dark.hex }}33",
+        "link_text.hover": "{{ colors.primary.dark.hex }}",
+        "terminal.background": "{{ colors.terminal_background.dark.hex }}",
+        "terminal.foreground": "{{ colors.terminal_foreground.dark.hex }}",
+        "terminal.bright_foreground": "{{ colors.terminal_foreground.dark.hex }}",
+        "terminal.dim_foreground": "{{ colors.on_surface_variant.dark.hex }}",
+        "terminal.ansi.black": "{{ colors.terminal_normal_black.dark.hex }}",
+        "terminal.ansi.bright_black": "{{ colors.terminal_bright_black.dark.hex }}",
+        "terminal.ansi.dim_black": "{{ colors.terminal_normal_black.dark.hex | desaturate 25 }}",
+        "terminal.ansi.red": "{{ colors.terminal_normal_red.dark.hex }}",
+        "terminal.ansi.bright_red": "{{ colors.terminal_bright_red.dark.hex }}",
+        "terminal.ansi.dim_red": "{{ colors.terminal_normal_red.dark.hex | desaturate 25 }}",
+        "terminal.ansi.green": "{{ colors.terminal_normal_green.dark.hex }}",
+        "terminal.ansi.bright_green": "{{ colors.terminal_bright_green.dark.hex }}",
+        "terminal.ansi.dim_green": "{{ colors.terminal_normal_green.dark.hex | desaturate 25 }}",
+        "terminal.ansi.yellow": "{{ colors.terminal_normal_yellow.dark.hex }}",
+        "terminal.ansi.bright_yellow": "{{ colors.terminal_bright_yellow.dark.hex }}",
+        "terminal.ansi.dim_yellow": "{{ colors.terminal_normal_yellow.dark.hex | desaturate 25 }}",
+        "terminal.ansi.blue": "{{ colors.terminal_normal_blue.dark.hex }}",
+        "terminal.ansi.bright_blue": "{{ colors.terminal_bright_blue.dark.hex }}",
+        "terminal.ansi.dim_blue": "{{ colors.terminal_normal_blue.dark.hex | desaturate 25 }}",
+        "terminal.ansi.magenta": "{{ colors.terminal_normal_magenta.dark.hex }}",
+        "terminal.ansi.bright_magenta": "{{ colors.terminal_bright_magenta.dark.hex }}",
+        "terminal.ansi.dim_magenta": "{{ colors.terminal_normal_magenta.dark.hex | desaturate 25 }}",
+        "terminal.ansi.cyan": "{{ colors.terminal_normal_cyan.dark.hex }}",
+        "terminal.ansi.bright_cyan": "{{ colors.terminal_bright_cyan.dark.hex }}",
+        "terminal.ansi.dim_cyan": "{{ colors.terminal_normal_cyan.dark.hex | desaturate 25 }}",
+        "terminal.ansi.white": "{{ colors.terminal_normal_white.dark.hex }}",
+        "terminal.ansi.bright_white": "{{ colors.terminal_bright_white.dark.hex }}",
+        "terminal.ansi.dim_white": "{{ colors.terminal_normal_white.dark.hex | desaturate 25 }}",
+        "error": "{{ colors.error.dark.hex }}",
+        "error.background": "{{ colors.error.dark.hex }}1f",
+        "error.border": "{{ colors.error.dark.hex }}",
+        "warning": "{{ colors.caution.dark.hex }}",
+        "warning.background": "{{ colors.caution.dark.hex }}1f",
+        "warning.border": "{{ colors.caution.dark.hex }}",
+        "success": "{{ colors.added.dark.hex }}",
+        "success.background": "{{ colors.added.dark.hex }}1f",
+        "success.border": "{{ colors.added.dark.hex }}",
+        "created": "{{ colors.added.dark.hex }}",
+        "created.background": "{{ colors.added.dark.hex }}1f",
+        "created.border": "{{ colors.added.dark.hex }}",
+        "modified": "{{ colors.caution.dark.hex }}",
+        "modified.background": "{{ colors.caution.dark.hex }}1f",
+        "modified.border": "{{ colors.caution.dark.hex }}",
+        "deleted": "{{ colors.error.dark.hex }}",
+        "deleted.background": "{{ colors.error.dark.hex }}1f",
+        "deleted.border": "{{ colors.error.dark.hex }}",
+        "conflict": "{{ colors.error.dark.hex }}",
+        "conflict.background": "{{ colors.error.dark.hex }}1f",
+        "conflict.border": "{{ colors.error.dark.hex }}",
+        "info": "{{ colors.primary.dark.hex }}",
+        "info.background": "{{ colors.primary.dark.hex }}1f",
+        "info.border": "{{ colors.primary.dark.hex }}",
+        "hint": "{{ colors.secondary.dark.hex }}",
+        "hint.background": "{{ colors.secondary.dark.hex }}1f",
+        "hint.border": "{{ colors.secondary.dark.hex }}",
+        "renamed": "{{ colors.tertiary.dark.hex }}",
+        "renamed.background": "{{ colors.tertiary.dark.hex }}1f",
+        "renamed.border": "{{ colors.tertiary.dark.hex }}",
+        "hidden": "{{ colors.outline.dark.hex }}",
+        "ignored": "{{ colors.outline.dark.hex }}",
+        "unreachable": "{{ colors.outline.dark.hex }}",
+        "predictive": "{{ colors.outline.dark.hex }}",
+        "players": [
+          {
+            "cursor": "{{ colors.primary.dark.hex }}",
+            "background": "{{ colors.primary.dark.hex }}",
+            "selection": "{{ colors.primary.dark.hex }}3d"
+          },
+          {
+            "cursor": "{{ colors.tertiary.dark.hex }}",
+            "background": "{{ colors.tertiary.dark.hex }}",
+            "selection": "{{ colors.tertiary.dark.hex }}3d"
+          },
+          {
+            "cursor": "{{ colors.secondary.dark.hex }}",
+            "background": "{{ colors.secondary.dark.hex }}",
+            "selection": "{{ colors.secondary.dark.hex }}3d"
+          },
+          {
+            "cursor": "{{ colors.added.dark.hex }}",
+            "background": "{{ colors.added.dark.hex }}",
+            "selection": "{{ colors.added.dark.hex }}3d"
+          },
+          {
+            "cursor": "{{ colors.caution.dark.hex }}",
+            "background": "{{ colors.caution.dark.hex }}",
+            "selection": "{{ colors.caution.dark.hex }}3d"
+          },
+          {
+            "cursor": "{{ colors.error.dark.hex }}",
+            "background": "{{ colors.error.dark.hex }}",
+            "selection": "{{ colors.error.dark.hex }}3d"
+          }
+        ],
+        "syntax": {
+          "attribute": {
+            "color": "{{ colors.tertiary.dark.hex }}"
+          },
+          "boolean": {
+            "color": "{{ colors.tertiary.dark.hex }}"
+          },
+          "comment": {
+            "color": "{{ colors.outline.dark.hex }}",
+            "font_style": "italic"
+          },
+          "comment.doc": {
+            "color": "{{ colors.on_surface_variant.dark.hex }}",
+            "font_style": "italic"
+          },
+          "constant": {
+            "color": "{{ colors.tertiary.dark.hex }}"
+          },
+          "constructor": {
+            "color": "{{ colors.primary.dark.hex }}"
+          },
+          "embedded": {
+            "color": "{{ colors.on_surface.dark.hex }}"
+          },
+          "emphasis": {
+            "color": "{{ colors.primary.dark.hex }}",
+            "font_style": "italic"
+          },
+          "emphasis.strong": {
+            "color": "{{ colors.primary.dark.hex }}",
+            "font_weight": 700
+          },
+          "enum": {
+            "color": "{{ colors.tertiary.dark.hex }}"
+          },
+          "function": {
+            "color": "{{ colors.primary.dark.hex }}"
+          },
+          "hint": {
+            "color": "{{ colors.outline.dark.hex }}"
+          },
+          "keyword": {
+            "color": "{{ colors.secondary.dark.hex }}",
+            "font_weight": 600
+          },
+          "label": {
+            "color": "{{ colors.primary.dark.hex }}"
+          },
+          "link_text": {
+            "color": "{{ colors.primary.dark.hex }}",
+            "font_style": "italic"
+          },
+          "link_uri": {
+            "color": "{{ colors.tertiary.dark.hex }}"
+          },
+          "number": {
+            "color": "{{ colors.tertiary.dark.hex }}"
+          },
+          "operator": {
+            "color": "{{ colors.on_surface_variant.dark.hex }}"
+          },
+          "predictive": {
+            "color": "{{ colors.outline.dark.hex }}",
+            "font_style": "italic"
+          },
+          "preproc": {
+            "color": "{{ colors.caution.dark.hex }}"
+          },
+          "primary": {
+            "color": "{{ colors.on_surface.dark.hex }}"
+          },
+          "property": {
+            "color": "{{ colors.on_surface.dark.hex }}"
+          },
+          "punctuation": {
+            "color": "{{ colors.on_surface_variant.dark.hex }}"
+          },
+          "punctuation.bracket": {
+            "color": "{{ colors.on_surface_variant.dark.hex }}"
+          },
+          "punctuation.delimiter": {
+            "color": "{{ colors.on_surface_variant.dark.hex }}"
+          },
+          "punctuation.list_marker": {
+            "color": "{{ colors.primary.dark.hex }}"
+          },
+          "punctuation.special": {
+            "color": "{{ colors.secondary.dark.hex }}"
+          },
+          "string": {
+            "color": "{{ colors.added.dark.hex }}"
+          },
+          "string.escape": {
+            "color": "{{ colors.caution.dark.hex }}"
+          },
+          "string.regex": {
+            "color": "{{ colors.caution.dark.hex }}"
+          },
+          "string.special": {
+            "color": "{{ colors.caution.dark.hex }}"
+          },
+          "string.special.symbol": {
+            "color": "{{ colors.tertiary.dark.hex }}"
+          },
+          "tag": {
+            "color": "{{ colors.primary.dark.hex }}"
+          },
+          "text.literal": {
+            "color": "{{ colors.added.dark.hex }}"
+          },
+          "title": {
+            "color": "{{ colors.primary.dark.hex }}",
+            "font_weight": 700
+          },
+          "type": {
+            "color": "{{ colors.tertiary.dark.hex }}"
+          },
+          "variable": {
+            "color": "{{ colors.on_surface.dark.hex }}"
+          },
+          "variable.special": {
+            "color": "{{ colors.secondary.dark.hex }}",
+            "font_style": "italic"
+          },
+          "variant": {
+            "color": "{{ colors.tertiary.dark.hex }}"
+          }
+        }
+      }
+    },
+    {
+      "name": "OKARU Light",
+      "appearance": "light",
+      "style": {
+        "background": "{{ colors.surface_container.light.hex }}",
+        "border": "{{ colors.outline_variant.light.hex }}",
+        "border.variant": "{{ colors.surface_container_highest.light.hex }}",
+        "border.focused": "{{ colors.primary.light.hex }}",
+        "border.selected": "{{ colors.primary.light.hex }}",
+        "border.transparent": "#00000000",
+        "border.disabled": "{{ colors.outline_variant.light.hex }}",
+        "elevated_surface.background": "{{ colors.surface_container_high.light.hex }}",
+        "surface.background": "{{ colors.surface_container.light.hex }}",
+        "element.background": "{{ colors.surface_container_high.light.hex }}",
+        "element.hover": "{{ colors.surface_container_highest.light.hex }}",
+        "element.active": "{{ colors.secondary_container.light.hex }}",
+        "element.selected": "{{ colors.secondary_container.light.hex }}",
+        "element.disabled": "{{ colors.surface_container.light.hex }}",
+        "drop_target.background": "{{ colors.primary.light.hex }}33",
+        "ghost_element.background": "#00000000",
+        "ghost_element.hover": "{{ colors.surface_container_highest.light.hex }}",
+        "ghost_element.active": "{{ colors.secondary_container.light.hex }}",
+        "ghost_element.selected": "{{ colors.secondary_container.light.hex }}",
+        "ghost_element.disabled": "#00000000",
+        "text": "{{ colors.on_surface.light.hex }}",
+        "text.muted": "{{ colors.on_surface_variant.light.hex }}",
+        "text.placeholder": "{{ colors.outline.light.hex }}",
+        "text.disabled": "{{ colors.outline.light.hex }}",
+        "text.accent": "{{ colors.primary.light.hex }}",
+        "icon": "{{ colors.on_surface.light.hex }}",
+        "icon.muted": "{{ colors.on_surface_variant.light.hex }}",
+        "icon.disabled": "{{ colors.outline.light.hex }}",
+        "icon.placeholder": "{{ colors.outline.light.hex }}",
+        "icon.accent": "{{ colors.primary.light.hex }}",
+        "status_bar.background": "{{ colors.surface_container.light.hex }}",
+        "title_bar.background": "{{ colors.surface_container.light.hex }}",
+        "title_bar.inactive_background": "{{ colors.surface_container_low.light.hex }}",
+        "toolbar.background": "{{ colors.surface.light.hex }}",
+        "tab_bar.background": "{{ colors.surface_container.light.hex }}",
+        "tab.inactive_background": "{{ colors.surface_container.light.hex }}",
+        "tab.active_background": "{{ colors.surface.light.hex }}",
+        "search.match_background": "{{ colors.tertiary.light.hex }}55",
+        "panel.background": "{{ colors.surface_container.light.hex }}",
+        "panel.focused_border": "{{ colors.primary.light.hex }}",
+        "pane.focused_border": "{{ colors.primary.light.hex }}",
+        "scrollbar.thumb.background": "{{ colors.on_surface_variant.light.hex }}44",
+        "scrollbar.thumb.hover_background": "{{ colors.on_surface_variant.light.hex }}77",
+        "scrollbar.thumb.border": "#00000000",
+        "scrollbar.track.background": "#00000000",
+        "scrollbar.track.border": "#00000000",
+        "editor.foreground": "{{ colors.on_surface.light.hex }}",
+        "editor.background": "{{ colors.surface.light.hex }}",
+        "editor.gutter.background": "{{ colors.surface.light.hex }}",
+        "editor.subheader.background": "{{ colors.surface_container.light.hex }}",
+        "editor.active_line.background": "{{ colors.on_surface.light.hex }}0d",
+        "editor.highlighted_line.background": "{{ colors.primary.light.hex }}1a",
+        "editor.line_number": "{{ colors.outline.light.hex }}",
+        "editor.active_line_number": "{{ colors.primary.light.hex }}",
+        "editor.invisible": "{{ colors.outline_variant.light.hex }}",
+        "editor.wrap_guide": "{{ colors.outline_variant.light.hex }}66",
+        "editor.active_wrap_guide": "{{ colors.outline_variant.light.hex }}",
+        "editor.document_highlight.read_background": "{{ colors.primary.light.hex }}26",
+        "editor.document_highlight.write_background": "{{ colors.tertiary.light.hex }}33",
+        "link_text.hover": "{{ colors.primary.light.hex }}",
+        "terminal.background": "{{ colors.terminal_background.light.hex }}",
+        "terminal.foreground": "{{ colors.terminal_foreground.light.hex }}",
+        "terminal.bright_foreground": "{{ colors.terminal_foreground.light.hex }}",
+        "terminal.dim_foreground": "{{ colors.on_surface_variant.light.hex }}",
+        "terminal.ansi.black": "{{ colors.terminal_normal_black.light.hex }}",
+        "terminal.ansi.bright_black": "{{ colors.terminal_bright_black.light.hex }}",
+        "terminal.ansi.dim_black": "{{ colors.terminal_normal_black.light.hex | desaturate 25 }}",
+        "terminal.ansi.red": "{{ colors.terminal_normal_red.light.hex }}",
+        "terminal.ansi.bright_red": "{{ colors.terminal_bright_red.light.hex }}",
+        "terminal.ansi.dim_red": "{{ colors.terminal_normal_red.light.hex | desaturate 25 }}",
+        "terminal.ansi.green": "{{ colors.terminal_normal_green.light.hex }}",
+        "terminal.ansi.bright_green": "{{ colors.terminal_bright_green.light.hex }}",
+        "terminal.ansi.dim_green": "{{ colors.terminal_normal_green.light.hex | desaturate 25 }}",
+        "terminal.ansi.yellow": "{{ colors.terminal_normal_yellow.light.hex }}",
+        "terminal.ansi.bright_yellow": "{{ colors.terminal_bright_yellow.light.hex }}",
+        "terminal.ansi.dim_yellow": "{{ colors.terminal_normal_yellow.light.hex | desaturate 25 }}",
+        "terminal.ansi.blue": "{{ colors.terminal_normal_blue.light.hex }}",
+        "terminal.ansi.bright_blue": "{{ colors.terminal_bright_blue.light.hex }}",
+        "terminal.ansi.dim_blue": "{{ colors.terminal_normal_blue.light.hex | desaturate 25 }}",
+        "terminal.ansi.magenta": "{{ colors.terminal_normal_magenta.light.hex }}",
+        "terminal.ansi.bright_magenta": "{{ colors.terminal_bright_magenta.light.hex }}",
+        "terminal.ansi.dim_magenta": "{{ colors.terminal_normal_magenta.light.hex | desaturate 25 }}",
+        "terminal.ansi.cyan": "{{ colors.terminal_normal_cyan.light.hex }}",
+        "terminal.ansi.bright_cyan": "{{ colors.terminal_bright_cyan.light.hex }}",
+        "terminal.ansi.dim_cyan": "{{ colors.terminal_normal_cyan.light.hex | desaturate 25 }}",
+        "terminal.ansi.white": "{{ colors.terminal_normal_white.light.hex }}",
+        "terminal.ansi.bright_white": "{{ colors.terminal_bright_white.light.hex }}",
+        "terminal.ansi.dim_white": "{{ colors.terminal_normal_white.light.hex | desaturate 25 }}",
+        "error": "{{ colors.error.light.hex }}",
+        "error.background": "{{ colors.error.light.hex }}1f",
+        "error.border": "{{ colors.error.light.hex }}",
+        "warning": "{{ colors.caution.light.hex }}",
+        "warning.background": "{{ colors.caution.light.hex }}1f",
+        "warning.border": "{{ colors.caution.light.hex }}",
+        "success": "{{ colors.added.light.hex }}",
+        "success.background": "{{ colors.added.light.hex }}1f",
+        "success.border": "{{ colors.added.light.hex }}",
+        "created": "{{ colors.added.light.hex }}",
+        "created.background": "{{ colors.added.light.hex }}1f",
+        "created.border": "{{ colors.added.light.hex }}",
+        "modified": "{{ colors.caution.light.hex }}",
+        "modified.background": "{{ colors.caution.light.hex }}1f",
+        "modified.border": "{{ colors.caution.light.hex }}",
+        "deleted": "{{ colors.error.light.hex }}",
+        "deleted.background": "{{ colors.error.light.hex }}1f",
+        "deleted.border": "{{ colors.error.light.hex }}",
+        "conflict": "{{ colors.error.light.hex }}",
+        "conflict.background": "{{ colors.error.light.hex }}1f",
+        "conflict.border": "{{ colors.error.light.hex }}",
+        "info": "{{ colors.primary.light.hex }}",
+        "info.background": "{{ colors.primary.light.hex }}1f",
+        "info.border": "{{ colors.primary.light.hex }}",
+        "hint": "{{ colors.secondary.light.hex }}",
+        "hint.background": "{{ colors.secondary.light.hex }}1f",
+        "hint.border": "{{ colors.secondary.light.hex }}",
+        "renamed": "{{ colors.tertiary.light.hex }}",
+        "renamed.background": "{{ colors.tertiary.light.hex }}1f",
+        "renamed.border": "{{ colors.tertiary.light.hex }}",
+        "hidden": "{{ colors.outline.light.hex }}",
+        "ignored": "{{ colors.outline.light.hex }}",
+        "unreachable": "{{ colors.outline.light.hex }}",
+        "predictive": "{{ colors.outline.light.hex }}",
+        "players": [
+          {
+            "cursor": "{{ colors.primary.light.hex }}",
+            "background": "{{ colors.primary.light.hex }}",
+            "selection": "{{ colors.primary.light.hex }}3d"
+          },
+          {
+            "cursor": "{{ colors.tertiary.light.hex }}",
+            "background": "{{ colors.tertiary.light.hex }}",
+            "selection": "{{ colors.tertiary.light.hex }}3d"
+          },
+          {
+            "cursor": "{{ colors.secondary.light.hex }}",
+            "background": "{{ colors.secondary.light.hex }}",
+            "selection": "{{ colors.secondary.light.hex }}3d"
+          },
+          {
+            "cursor": "{{ colors.added.light.hex }}",
+            "background": "{{ colors.added.light.hex }}",
+            "selection": "{{ colors.added.light.hex }}3d"
+          },
+          {
+            "cursor": "{{ colors.caution.light.hex }}",
+            "background": "{{ colors.caution.light.hex }}",
+            "selection": "{{ colors.caution.light.hex }}3d"
+          },
+          {
+            "cursor": "{{ colors.error.light.hex }}",
+            "background": "{{ colors.error.light.hex }}",
+            "selection": "{{ colors.error.light.hex }}3d"
+          }
+        ],
+        "syntax": {
+          "attribute": {
+            "color": "{{ colors.tertiary.light.hex }}"
+          },
+          "boolean": {
+            "color": "{{ colors.tertiary.light.hex }}"
+          },
+          "comment": {
+            "color": "{{ colors.outline.light.hex }}",
+            "font_style": "italic"
+          },
+          "comment.doc": {
+            "color": "{{ colors.on_surface_variant.light.hex }}",
+            "font_style": "italic"
+          },
+          "constant": {
+            "color": "{{ colors.tertiary.light.hex }}"
+          },
+          "constructor": {
+            "color": "{{ colors.primary.light.hex }}"
+          },
+          "embedded": {
+            "color": "{{ colors.on_surface.light.hex }}"
+          },
+          "emphasis": {
+            "color": "{{ colors.primary.light.hex }}",
+            "font_style": "italic"
+          },
+          "emphasis.strong": {
+            "color": "{{ colors.primary.light.hex }}",
+            "font_weight": 700
+          },
+          "enum": {
+            "color": "{{ colors.tertiary.light.hex }}"
+          },
+          "function": {
+            "color": "{{ colors.primary.light.hex }}"
+          },
+          "hint": {
+            "color": "{{ colors.outline.light.hex }}"
+          },
+          "keyword": {
+            "color": "{{ colors.secondary.light.hex }}",
+            "font_weight": 600
+          },
+          "label": {
+            "color": "{{ colors.primary.light.hex }}"
+          },
+          "link_text": {
+            "color": "{{ colors.primary.light.hex }}",
+            "font_style": "italic"
+          },
+          "link_uri": {
+            "color": "{{ colors.tertiary.light.hex }}"
+          },
+          "number": {
+            "color": "{{ colors.tertiary.light.hex }}"
+          },
+          "operator": {
+            "color": "{{ colors.on_surface_variant.light.hex }}"
+          },
+          "predictive": {
+            "color": "{{ colors.outline.light.hex }}",
+            "font_style": "italic"
+          },
+          "preproc": {
+            "color": "{{ colors.caution.light.hex }}"
+          },
+          "primary": {
+            "color": "{{ colors.on_surface.light.hex }}"
+          },
+          "property": {
+            "color": "{{ colors.on_surface.light.hex }}"
+          },
+          "punctuation": {
+            "color": "{{ colors.on_surface_variant.light.hex }}"
+          },
+          "punctuation.bracket": {
+            "color": "{{ colors.on_surface_variant.light.hex }}"
+          },
+          "punctuation.delimiter": {
+            "color": "{{ colors.on_surface_variant.light.hex }}"
+          },
+          "punctuation.list_marker": {
+            "color": "{{ colors.primary.light.hex }}"
+          },
+          "punctuation.special": {
+            "color": "{{ colors.secondary.light.hex }}"
+          },
+          "string": {
+            "color": "{{ colors.added.light.hex }}"
+          },
+          "string.escape": {
+            "color": "{{ colors.caution.light.hex }}"
+          },
+          "string.regex": {
+            "color": "{{ colors.caution.light.hex }}"
+          },
+          "string.special": {
+            "color": "{{ colors.caution.light.hex }}"
+          },
+          "string.special.symbol": {
+            "color": "{{ colors.tertiary.light.hex }}"
+          },
+          "tag": {
+            "color": "{{ colors.primary.light.hex }}"
+          },
+          "text.literal": {
+            "color": "{{ colors.added.light.hex }}"
+          },
+          "title": {
+            "color": "{{ colors.primary.light.hex }}",
+            "font_weight": 700
+          },
+          "type": {
+            "color": "{{ colors.tertiary.light.hex }}"
+          },
+          "variable": {
+            "color": "{{ colors.on_surface.light.hex }}"
+          },
+          "variable.special": {
+            "color": "{{ colors.secondary.light.hex }}",
+            "font_style": "italic"
+          },
+          "variant": {
+            "color": "{{ colors.tertiary.light.hex }}"
+          }
+        }
+      }
+    }
+  ]
+}

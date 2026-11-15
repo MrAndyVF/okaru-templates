@@ -1,0 +1,10 @@
+[catalog.steam]
+name = "Steam"
+category = "gaming"
+
+# Para la skin Material-Theme de Millennium, que ya trae la opción de colores "matugen": este archivo le da
+# los de OKARU. Solo se escribe si la skin está instalada.
+[templates.steam]
+input_path = "colors.css"
+output_path = "~/.steam/steam/steamui/skins/Material-Theme/css/main/colors/matugen.css"
+requires_path = "~/.steam/steam/steamui/skins/Material-Theme/skin.json"

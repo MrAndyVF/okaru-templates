@@ -1,0 +1,17 @@
+[catalog.claude-code]
+name = "Claude Code"
+category = "ai"
+
+# Verde y ámbar propios, armonizados con la paleta: dan success/warning y sus fondos de diff por modo.
+[config.custom_colors.added]
+color = "#3fa66b"
+blend = true
+
+[config.custom_colors.caution]
+color = "#d89a2b"
+blend = true
+
+# Claude Code vigila ~/.claude/themes y recarga el tema al momento: no hace falta hook.
+[templates.claude-code]
+input_path = "okaru.json"
+output_path = "~/.claude/themes/okaru.json"
