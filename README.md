@@ -1,10 +1,46 @@
-# OKARU (郁) · plantillas de la comunidad
+# OKARU (郁) · community templates
 
-Plantillas de color para [OKARU](https://github.com/MrAndyVF): cada una lleva la paleta activa de la shell a
+**English** · [Español](#español)
+
+Color templates for [OKARU](https://github.com/MrAndyVF/okaru): each one carries the shell's active palette to
+another application (editors, browsers, terminals, games…). OKARU reads this repository's `catalog.json` and
+downloads only the templates you enable in **Settings → Appearance → Templates**.
+
+## Contributing a template
+
+1. Create `templates/<id>/` (lowercase id: letters, numbers, `.`, `_`, `-`).
+2. Add `template.toml`:
+
+   ```toml
+   [catalog.<id>]
+   name = "Display name"
+   category = "editor" # ai, audio, browser, chat, compositor, editor, gaming, launcher, misc, system, terminal
+
+   [templates.<id>]
+   input_path = "<id>.json"            # input file with the color tokens
+   output_path = "~/.config/app/theme.json"
+   # post_hook = "./apply.sh"          # optional
+   ```
+
+3. Add the files it uses and a `README.md` (what it does, how to enable it in the app, optional screenshot).
+4. Run `python3 tools/build_catalog.py` and commit `catalog.json` in the same pull request.
+
+The GitHub Action checks that `catalog.json` is up to date and that every template has its `template.toml`.
+
+## License
+
+MIT. By opening a pull request you agree to publish your template under this license; do not submit
+third-party work without permission.
+
+---
+
+## Español
+
+Plantillas de color para [OKARU](https://github.com/MrAndyVF/okaru): cada una lleva la paleta activa de la shell a
 otra aplicación (editores, navegadores, terminales, juegos…). OKARU lee `catalog.json` de este repo y
 descarga solo las plantillas que actives en **Ajustes → Apariencia → Plantillas**.
 
-## Aportar una plantilla
+### Aportar una plantilla
 
 1. Crea `templates/<id>/` (id en minúsculas: letras, números, `.`, `_`, `-`).
 2. Añade `template.toml`:
@@ -25,7 +61,7 @@ descarga solo las plantillas que actives en **Ajustes → Apariencia → Plantil
 
 La GitHub Action comprueba que `catalog.json` esté al día y que cada plantilla tenga su `template.toml`.
 
-## Licencia
+### Licencia
 
 MIT. Al enviar un pull request aceptas publicar tu plantilla bajo esta licencia; no subas trabajo de
 terceros sin su permiso.
