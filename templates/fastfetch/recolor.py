@@ -3,6 +3,7 @@
 
 apply: "keyColor": "green" -> "keyColor": "#rrggbb" /*okaru:green*/ (y lo mismo en logo.color).
 undo: vuelve a "green". El comentario guarda el nombre original, así que reaplicar y deshacer son exactos.
+Mezclas (degradado del logo): "#rrggbb" /*okaru:blue..magenta@3*/ = 3/8 del camino de blue a magenta.
 """
 import json, os, re, sys, tempfile
 
@@ -12,7 +13,7 @@ path = os.path.join(home, "fastfetch", "config.jsonc")
 colors_path = os.path.join(os.environ.get("XDG_CACHE_HOME") or os.path.expanduser("~/.cache"), "okaru", "fastfetch-colors.json")
 # "keyColor" de cada módulo y las claves "1".."9" de logo.color; valor con nombre o ya recoloreado.
 PATTERN = re.compile(
-    r'("(?:keyColor|[1-9])"\s*:\s*)"(?:([a-z_]+)|#[0-9a-fA-F]{6})"(?:\s*/\*okaru:([a-z_]+)\*/)?'
+    r'("(?:keyColor|[1-9])"\s*:\s*)"(?:([a-z_]+)|#[0-9a-fA-F]{6})"(?:\s*/\*okaru:([a-z_]+(?:\.\.[a-z_]+@[0-8])?)\*/)?'
 )
 
 
@@ -25,14 +26,30 @@ def main():
         with open(colors_path, encoding="utf-8") as f:
             palette = json.load(f)
 
+        def mix(name):
+            a, b = name[:-2].split("..")
+            if a not in palette or b not in palette:
+                return None
+            t = int(name[-1]) / 8
+            return "#" + "".join(
+                f"{round(int(palette[a][i:i + 2], 16) * (1 - t) + int(palette[b][i:i + 2], 16) * t):02x}"
+                for i in (1, 3, 5)
+            )
+
         def sub(m):
             name = m.group(3) or m.group(2)
+            if ".." in name:
+                hx = mix(name)
+                return f'{m.group(1)}"{hx}" /*okaru:{name}*/' if hx else m.group(0)
             if name not in palette:
                 return m.group(0)  # color que no es de la paleta (p. ej. ANSI crudo): se respeta
             return f'{m.group(1)}"{palette[name]}" /*okaru:{name}*/'
     else:
         def sub(m):
-            return f'{m.group(1)}"{m.group(3)}"' if m.group(3) else m.group(0)
+            # las mezclas no tienen nombre de fastfetch: se dejan con su hex (válido) y su marca
+            if not m.group(3) or ".." in m.group(3):
+                return m.group(0)
+            return f'{m.group(1)}"{m.group(3)}"'
 
     new = PATTERN.sub(sub, text)
     if new == text:
